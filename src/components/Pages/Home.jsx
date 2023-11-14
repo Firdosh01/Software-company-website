@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { VscArrowSmallRight } from "react-icons/vsc";
 import OurClients from "../Home/OurClients";
 import OurServices from "../Home/OurServices";
+import Testmonials from "../Home/Testmonials";
+
 
 export default function Home() {
   return (
@@ -48,7 +50,12 @@ export default function Home() {
           </h1>
         </marquee>
       </div>
+
+      <Testmonials />
+
       
+
+
     </div>
   );
 }
