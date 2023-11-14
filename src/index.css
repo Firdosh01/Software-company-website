@@ -30,3 +30,18 @@ body {
     background-attachment: unset;
   }
 }
+.active {
+  color: red;
+}
+.home .left-arrow {
+  position: relative;
+}
+.left-arrow::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 5px;
+  border-right: 3px solid white;
+  rotate: 90deg;
+  left: -20px;
+}
