@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { VscArrowSmallRight } from "react-icons/vsc";
+import OurClients from "../Home/OurClients";
+import OurServices from "../Home/OurServices";
 
 export default function Home() {
   return (
@@ -26,7 +28,27 @@ export default function Home() {
             </div>
           </Link>
         </div>
+
+        {/* our clients  */}
+        <div>
+          <OurClients />
+        </div>
+
+        {/* our services  */}
+        <div>
+          <OurServices />
+        </div>
       </div>
+
+      <div className="w-11/12 mx-auto max-w-screen-2xl">
+        <marquee behavior="smooth" direction="horizontal">
+          <h1 className="hidden gap-16 py-16 text-6xl font-semibold text-white md:flex">
+            <p>Web Design</p> <p>Social Media</p> <p>SEO</p>
+            <p>Content Writing</p>
+          </h1>
+        </marquee>
+      </div>
+      
     </div>
   );
 }

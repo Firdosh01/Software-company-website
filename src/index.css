@@ -45,3 +45,20 @@ body {
   rotate: 90deg;
   left: -20px;
 }
+.Img-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.Service-Img {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.Service-Img:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
