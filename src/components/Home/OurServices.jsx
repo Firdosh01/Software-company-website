@@ -5,9 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function OurServices() {
   return (
-    <div>
-      <div className="relative grid grid-cols-1 gap-3 py-10 md:grid-cols-3 gap-y-8">
-        {Services.map(({img, heading}) => (
+    <div className="py-5">
+      <div>
+        <h1 className="py-5 pt-20 text-3xl text-center md:text-5xl text-services">
+          Our Services
+        </h1>
+      </div>
+      <div className="relative grid grid-cols-1 gap-3 py-5 md:grid-cols-3 gap-y-8">
+        {Services.map(({ img, heading }) => (
           <div className="relative">
             <div className="Img-container">
               <img

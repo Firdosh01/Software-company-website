@@ -45,12 +45,16 @@ body {
   rotate: 90deg;
   left: -20px;
 }
+.text-services{
+  font-weight: 900;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
 .Img-container {
   position: relative;
   overflow: hidden;
   height: 250px;
 }
-
 .Service-Img {
   object-fit: cover;
   object-position: center;

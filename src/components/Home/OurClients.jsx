@@ -10,7 +10,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 export default function OurClients() {
   return (
     <div>
-      <div className="px-5">
+      <div className="hidden px-5 md:block">
         <div>
           <h1 className="py-5 pt-10 text-2xl font-semibold text-center text-white md:text-3xl lg:text-5xl">
             Our Top Clients
@@ -32,7 +32,7 @@ export default function OurClients() {
                 <img
                   src={logo}
                   alt="ClientLogo"
-                  width={250}
+                  width={200}
                   loading="lazy"
                 />
               </SwiperSlide>
