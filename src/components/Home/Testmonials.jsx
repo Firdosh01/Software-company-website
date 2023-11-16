@@ -18,7 +18,7 @@ export default function Testmonials() {
             What people say
           </h1>
         </div>
-        <div className="flex flex-col items-center gap-10 py-20 md:flex-row">
+        <div className="flex flex-col items-center py-20 gap-7 lg:gap-10 md:gap-2 md:flex-row">
           <div className="flex md:max-w-[50%]">
             <div>
               <img

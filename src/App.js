@@ -7,6 +7,7 @@ import About from './components/Pages/About';
 import Services from './components/Pages/Services';
 import Portfolio from './components/Pages/Portfolio';
 import Careers from './components/Pages/Careers';
+import Footer from './components/common/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='/careers' element={<Careers />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

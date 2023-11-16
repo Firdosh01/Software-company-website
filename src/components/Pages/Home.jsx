@@ -5,7 +5,6 @@ import OurClients from "../Home/OurClients";
 import OurServices from "../Home/OurServices";
 import Testmonials from "../Home/Testmonials";
 
-
 export default function Home() {
   return (
     <div>
@@ -53,9 +52,17 @@ export default function Home() {
 
       <Testmonials />
 
+      <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto">
+        <div className="py-16 text-center ">
+          <h1 className="py-5 text-2xl font-semibold text-center text-white md:text-4xl">
+            Let's work together! Send us a message
+          </h1>
+          <span className="md:text-4xl text-center font-semibol hover:text-white text-[#FD0F00] duration-300 text-xl cursor-pointer">
+            info@firdosh.com
+          </span>
+        </div>
+      </div>
       
-
-
     </div>
   );
 }
