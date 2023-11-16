@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="flex flex-wrap items-start justify-between gap-5 py-10 text-white center fade">
         <div>
           <Link to="/">
-            <img src={estrella} alt="" className=" h-[60px]" />
+            <img src={estrella} alt="" className="md:h-[60px] h-[40px]" />
           </Link>
           <p className="py-3  text-base md:w-[300px] leading-7">
             We blend creativity and technology to transform and grow our
