@@ -3,7 +3,7 @@ import ImageOne from "../../assets/34.jpg";
 import { VscArrowSmallRight } from "react-icons/vsc";
 import { AboutCard } from "../common/constent";
 import { Link } from "react-router-dom";
-
+import AboutCards from '../common/Card'
 export default function About() {
   return (
     <div>
@@ -70,15 +70,11 @@ export default function About() {
           <div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
               {AboutCard.map((aboutCard) => (
-                <div className="p-4 bg-[#1D1D1D] rounded hover:border-[#FD0F00] border border-[#1D1D1D] duration-300">
-                  <div className="text-4xl text-[#FD0F00]">
-                    <Link>{aboutCard.icon}</Link>
-                  </div>
-                  <h1 className="py-3 text-2xl font-semibold">
-                    {aboutCard.heading}
-                  </h1>
-                  <p className="text-sm">{aboutCard.desc}</p>
-                </div>
+                <AboutCards 
+                icon={aboutCard.icon}
+                heading={aboutCard.heading}
+                desc={aboutCard.desc}
+                />
               ))}
             </div>
           </div>
