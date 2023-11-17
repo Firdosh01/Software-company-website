@@ -25,6 +25,16 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { TbHeartHandshake } from "react-icons/tb";
 
+// services card icon
+import { ImMagicWand } from "react-icons/im";
+import { TbLocationBroken } from "react-icons/tb";
+import { FaAngellist } from "react-icons/fa";
+import { MdOutlineVideoLibrary } from "react-icons/md";
+import { IoAnalyticsSharp } from "react-icons/io5";
+import { LuBrain } from "react-icons/lu";
+import { MdContentPaste } from "react-icons/md";
+import { PiCursorClickLight } from "react-icons/pi";
+
 export const navigation = [
   {
     id: 1,
@@ -198,5 +208,62 @@ export const AboutCard = [
     icon: <TbHeartHandshake />,
     heading: "A True Partner",
     desc: "We take the time to understand your business from the top down so we can drive real value. We become a true partner to our client’s business, working across brand, marketing and technology initiatives to help them win."
+  },
+]
+
+export const ServicesCards = [
+  {
+    id: 1,
+    icon : <ImMagicWand />,
+    heading: "Web Desiginig & Development",
+    desc: "A website can make or break the first impression of your brand or business. We have mastered the discipline of “aesthetic usability”."
+  },
+  {
+    id: 2,
+    icon : <TbLocationBroken />,
+    heading: "Search Engine Optimization",
+    desc: "To enable businesses to grow by using our effective digital marketing services and people to be satisfied by finding convenience, fun and value in our online products."
+  },
+  {
+    id: 3,
+    icon : <FaAngellist />,
+    heading: "Social Media Marketing",
+    desc: "Digital Marketing Services offer an edge over traditional media. Social media is your best bet to invest in because it’s free! Platforms like Facebook, Instagram, etc."
+  },
+  {
+    id: 4,
+    icon : <MdOutlineVideoLibrary />,
+    heading: "Cinema Advertising",
+    desc: "This is one of the most interesting new-age advertising options. Cinema advertising rates are one of the lowest among non-mass media."
+  },
+  {
+    id: 5,
+    icon : <GoGoal />,
+    heading: "Corporrate Branding",
+    desc: "Everything we know about every product we use is because of branding. It is the link that connects the company to the customer and vice versa."
+  },
+  {
+    id: 6,
+    icon : <IoAnalyticsSharp />,
+    heading: "Analytics & Reports",
+    desc: "Looking at the right data points is very important for a successful campaign. We will help you see the truth, the whole truth, and nothing but the truth."
+  },
+  {
+    id: 7,
+    icon : <LuBrain />,
+    heading: "Brand Strategy",
+    desc: "We devise a digital strategy that is concerted on a long-term brand strategy and positioning and a micro-targeted market segment. We use SEO, back-links, and Social media marketing that resonates with the right segments."
+  },
+  {
+    id: 8,
+    icon : <MdContentPaste />,
+    heading: "Content Writing Services",
+    desc: "Well-written, articulated content engages the audience and is also the image you project in the web world. Not only is cohesive content important for your branding, and the growth of your business, but also in today’s digital world is highly dependent on it."
+  },
+  {
+    id: 9,
+    icon : <PiCursorClickLight />,
+    heading: "Pay Per Click",
+    desc: "SEO is great, but sometimes, your page needs a booster dose – which is where PPC or Pay per click steps in. Estrella is a PPC company offers PPC campaign management, making sure you put your money in the right place when it comes to your digital marketing plan."
   },
 ]
