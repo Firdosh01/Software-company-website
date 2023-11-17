@@ -45,9 +45,9 @@ body {
   rotate: 90deg;
   left: -20px;
 }
-.text-services{
+.text-services {
   font-weight: 900;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 1px #fff;
   color: transparent;
 }
 .Img-container {
@@ -65,4 +65,13 @@ body {
 .Service-Img:hover {
   transform: scale(1.1);
   transition-duration: 200ms;
+}
+.about-arrow::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 5px;
+  border-right: 3px solid white;
+  rotate: 90deg;
+  left: 10px;
 }

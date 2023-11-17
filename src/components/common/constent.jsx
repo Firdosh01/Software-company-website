@@ -17,6 +17,14 @@ import ServiceSix from "../../assets/seth-doyle-3rcT6_NjjbU-unsplash.jpg";
 import Arb from "../../assets/ARB.jpg";
 import apollo from "../../assets/apollo.jpg";
 
+// about card icon 
+import { MdOutlineSupervisedUserCircle } from "react-icons/md";
+import { GoGoal } from "react-icons/go";
+import { FaHandHoldingHeart } from "react-icons/fa";
+import { FaHandshakeSimple } from "react-icons/fa6";
+import { FaHandshakeAngle } from "react-icons/fa6";
+import { TbHeartHandshake } from "react-icons/tb";
+
 export const navigation = [
   {
     id: 1,
@@ -153,3 +161,42 @@ export const Testmonial = [
     SubHeading: "Health Care Clinic",
   },
 ];
+
+export const AboutCard = [
+  {
+    id: 1,
+    icon: <MdOutlineSupervisedUserCircle />,
+    heading: "Our Vision",
+    desc: "To be recognised for our contribution to the digital economy and for value We bring to business and Society."
+  },
+  {
+    id: 2,
+    icon: <GoGoal />,
+    heading: "Our Mission",
+    desc: "To enable businesses to grow by using our effective digital marketing services and people to be satisfied by finding convenience, fun and value in our online products."
+  },
+  {
+    id: 3,
+    icon: <FaHandHoldingHeart />,
+    heading: "Our Value",
+    desc: "We listen well and we engage we are also agile; market, technology and needs are not static so we “moved with your needs”."
+  },
+  {
+    id: 4,
+    icon: <FaHandshakeSimple />,
+    heading: "Trust",
+    desc: "The casual and Friendly enviroment fosters a proximity mindset where you can easily discuss and network with all Estrella team no matter their position in the company. Being trustworthy is one of our core value."
+  },
+  {
+    id: 5,
+    icon: <FaHandshakeAngle />,
+    heading: "Collaboration",
+    desc: "Our collaborative approach fosters a more enjoyable working relationship, better communication and transparency, a more efficient use of project resource and ultimately allows us to add maximum value to your business."
+  },
+  {
+    id: 6,
+    icon: <TbHeartHandshake />,
+    heading: "A True Partner",
+    desc: "We take the time to understand your business from the top down so we can drive real value. We become a true partner to our client’s business, working across brand, marketing and technology initiatives to help them win."
+  },
+]

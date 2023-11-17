@@ -7,7 +7,7 @@ export default function OurServices() {
   return (
     <div className="py-5">
       <div>
-        <h1 className="py-5 pt-20 text-3xl text-center md:text-5xl text-services">
+        <h1 className="py-5 pt-20 text-4xl text-center md:text-5xl text-services">
           Our Services
         </h1>
       </div>
