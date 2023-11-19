@@ -1,3 +1,5 @@
+import { FaAngleDown } from "react-icons/fa6";
+
 // Clients Logo
 import ClientOne from "../../assets/5.png";
 import ClientTwo from "../../assets/6.png";
@@ -55,6 +57,7 @@ export const navigation = [
     id: 4,
     nav: "Portfolio",
     path: "/portfolio",
+    downAroow: <FaAngleDown />
   },
   {
     id: 5,

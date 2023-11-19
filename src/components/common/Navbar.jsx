@@ -9,17 +9,23 @@ export default function Navbar() {
     <div>
       <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-5">
         <div className="flex items-center justify-between py-5">
-          <div>
+          <div className="fadeInLeft">
             <Link to="/">
               <img src={Estrella} alt="" className="w-[90%] h-[40px]" />
             </Link>
           </div>
 
           <nav>
-            <ul className="items-center hidden gap-5 md:flex">
+            <ul className="items-center hidden gap-5 md:flex fadeInDown">
               {navigation.map((navbar) => (
-                <li className="flex text-lg font-medium text-white duration-500 hover:text-red-600">
+                <li className="relative flex items-center gap-2 text-lg font-medium text-white duration-500 hover:text-red-600 fadeInDown">
                   <NavLink to={navbar.path}>{navbar.nav}</NavLink>
+                  <div className="flex flex-col group">
+                  <Link className="hover:rotate-[180deg] transition duration-500">{navbar.downAroow}</Link>
+                  <div className="absolute  hidden text-white bg-[#1D1D1D] group-hover:block group-hover:top-9 w-[200px] py-9 px-4 left-[50%] -translate-x-[50%] ">
+                    <p>Website Designing</p>
+                  </div>
+                  </div>
                 </li>
               ))}
             </ul>

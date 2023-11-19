@@ -75,3 +75,53 @@ body {
   rotate: 90deg;
   left: 10px;
 }
+
+.fadeInLeft{
+ animation-name: fadeInLeft; 
+ animation-duration: .5s;
+}
+@keyframes fadeInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown{
+  transform: translateY(-100%);
+  filter: blur(10px);
+  opacity: 0;
+  animation: fadeInDown .5s .5s ease-in-out 1 forwards;
+  animation-delay: .7s;
+}
+@keyframes fadeInDown {
+  to{
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.fadeInUp{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: fadeInUp .5s .7s ease-in-out 1 forwards;
+}
+.fadeInUp h1{
+  animation-delay: .8s;
+}
+.fadeInUp p{
+  animation-delay: 1s;
+}
+@keyframes fadeInUp {
+  to{
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
