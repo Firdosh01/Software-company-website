@@ -53,7 +53,7 @@ body {
 .Img-container {
   position: relative;
   overflow: hidden;
-  height: 250px;
+  height: 300px;
 }
 .Service-Img {
   object-fit: cover;
@@ -80,7 +80,7 @@ body {
 
 .fadeInLeft {
   animation-name: fadeInLeft;
-  animation-duration: 0.5s;
+  animation-duration: 0.9s;
 }
 @keyframes fadeInLeft {
   0% {

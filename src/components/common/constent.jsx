@@ -8,12 +8,12 @@ import ClientFour from "../../assets/bjp logo.png";
 
 // Services Images
 
-import ServiceOne from "../../assets/christopher-gower-m_HRfLhgABo-unsplash-compressed.jpg";
-import ServiceTwo from "../../assets/melanie-deziel-U33fHryBYBU-unsplash-compressed.jpg";
-import ServiceThree from "../../assets/myriam-jessier-eveI7MOcSmw-unsplash-compressed.jpg";
-import ServiceFour from "../../assets/nikita-kachanovsky-g-YiX8ynmnY-unsplash-compressed.jpg";
-import ServiceFive from "../../assets/piotr-cichosz-NhRk-907Ayc-unsplash-compressed.jpg";
-import ServiceSix from "../../assets/seth-doyle-3rcT6_NjjbU-unsplash.jpg";
+import ServiceOne from "../../assets/06.jpg";
+import ServiceTwo from "../../assets/07.jpg";
+import ServiceThree from "../../assets/08.jpg";
+import ServiceFour from "../../assets/09.jpg";
+import ServiceFive from "../../assets/010.jpg";
+import ServiceSix from "../../assets/011.jpg";
 
 // Testmonials
 import Arb from "../../assets/ARB.jpg";

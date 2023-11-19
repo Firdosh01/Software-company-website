@@ -18,7 +18,7 @@ export default function OurServices() {
               <img
                 src={img}
                 alt="serviceImage"
-                className="Service-Img"
+                className="select-none Service-Img"
                 loading="lazy"
               />
             </div>

@@ -24,7 +24,7 @@ export default function Testmonials() {
               <img
                 src={ImageOne}
                 alt=""
-                className="md:h-[400px]  object-cover w-full"
+                className="md:h-[400px]  object-cover w-full select-none"
                 loading="lazy"
               />
             </div>
@@ -32,7 +32,7 @@ export default function Testmonials() {
               <img
                 src={ImageTwo}
                 alt=""
-                className="md:h-[400px] object-cover relative md:top-11 top-20 w-full"
+                className="md:h-[400px] object-cover relative md:top-11 top-20 w-full select-none"
                 loading="lazy"
               />
             </div>
