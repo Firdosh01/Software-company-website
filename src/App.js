@@ -8,6 +8,7 @@ import Services from './components/Pages/Services';
 import Portfolio from './components/Pages/Portfolio';
 import Careers from './components/Pages/Careers';
 import Footer from './components/common/Footer';
+import WebsiteDesigning from './components/Pages/WebsiteDesigning';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='services' element={<Services />} />
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='/careers' element={<Careers />} />
+        <Route path='website-designing' element={<WebsiteDesigning />} />
       </Routes>
       <Footer />
     </div>
