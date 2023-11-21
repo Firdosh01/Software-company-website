@@ -7,6 +7,33 @@ import { FaCheck } from "react-icons/fa";
 export default function Careers() {
   const [page, setPage] = useState(1);
   console.log(page);
+  const [formData, setFormData] = useState({
+    // stepOneData 
+    FullName: "",
+    ContactNo: "",
+    Email: "",
+    AboutUs: "Ads",
+    City: "Ranchi",
+    Address: "",
+    
+    // stepTwoData 
+    ExperienceinYears: "",
+    HighestQualification: "PG",
+    CurrentDesignation: "",
+    CurrentEmployer: "",
+    CurrentSalary: "",
+    ExpectedSalary: "",
+    NoticePeriod: "",
+    SkillSet: ""  
+    
+  })
+
+    const changeHandler = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value
+    }))
+  }
 
   const steps = [
     {
@@ -41,7 +68,7 @@ export default function Careers() {
         </div>
 
         <div>
-          <div className="relative flex justify-center w-full mb-2">
+          <div className="relative flex justify-center w-full py-3 mb-2">
             {steps.map((item) => (
               <>
                 <div className="flex flex-col items-center " key={item.id}>
@@ -72,13 +99,13 @@ export default function Careers() {
                       {" "}
                     </div>
                   </>
-                )}
+                )}{" "}
               </>
             ))}
           </div>
 
-          {page === 1 && <StepOne />}
-          {page === 2 && <StepTwo />}
+          {page === 1 && <StepOne formData={formData} setFormData={setFormData} changeHandler={changeHandler} />}
+          {page === 2 && <StepTwo formData={formData} setFormData={setFormData} changeHandler={changeHandler} />}
           {page === 3 && <StepThree />}
 
           <div>
@@ -87,8 +114,7 @@ export default function Careers() {
                 <button
                   className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300"
                   onClick={() => {
-                    const prevPage = page - 1;
-                    setPage(prevPage);
+                    setPage((currPage) => currPage - 1 )
                   }}
                 >
                   Previos
@@ -98,8 +124,7 @@ export default function Careers() {
                 <button
                   className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300"
                   onClick={() => {
-                    const nextPage = page + 1;
-                    setPage(nextPage);
+                    setPage((currPage) => currPage + 1)
                   }}
                 >
                   Next

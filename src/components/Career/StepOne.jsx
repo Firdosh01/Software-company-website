@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
-export default function StepOne() {
-
-    const [FullName, setFullName] = useState("")
-    const [ContactNo, setContactNo] = useState("")
-    const [Email, setEmail] = useState("")
+export default function StepOne({formData, setFormData, changeHandler}) {
       
   return (
     <form>
@@ -18,10 +14,8 @@ export default function StepOne() {
             type="text"
             name="FullName"
             id="FullName"
-            value={FullName}
-            onChange={(e) => {
-                setFullName(e.target.value)
-            }}
+            value={formData.FullName}
+            onChange={changeHandler}
             placeholder="Full Name"
             className="w-full px-2 py-2 font-bold bg-black border rounded outline-none border-slate-400"
           />
@@ -32,13 +26,12 @@ export default function StepOne() {
             Contact No. <sup className="text-[#FD0F00] select-none">*</sup>
           </label>
           <input
+          required
             type="text"
             name="ContactNo"
             id="ContactNo"
-            value={ContactNo}
-            onChange={(e) => {
-                setContactNo(e.target.value)
-            }}
+            value={formData.ContactNo}
+            onChange={changeHandler}
             placeholder="Contact No."
             className="w-full px-2 py-2 font-bold bg-black border rounded outline-none border-slate-400"
           />
@@ -49,19 +42,18 @@ export default function StepOne() {
             Email-id <sup className="text-[#FD0F00] select-none">*</sup>
           </label>
           <input
+          required
             type="email"
             name="Email"
             id="Email"
-            value={Email}
-            onChange={(e) => {
-                setEmail(e.target.value)
-            }}
+            value={formData.Email}
+            onChange={changeHandler}
             placeholder="Email"
             className="w-full px-2 py-2 font-bold bg-black border rounded outline-none border-slate-400"
           />
         </div>
 
-        {/* <div className="flex flex-col">
+        <div className="flex flex-col">
           <label htmlFor="AboutUs">
             How did you hear about us?{" "}
             <sup className="text-[#FD0F00] select-none">*</sup>
@@ -69,6 +61,8 @@ export default function StepOne() {
           <select
             name="AboutUs"
             id="AboutUs"
+            value={formData.AboutUs}
+            onChange={changeHandler}
             className="w-full px-2 py-2 font-bold bg-black border rounded outline-none border-slate-400"
           >
             <option value="SocialMedia">Social Media</option>
@@ -85,6 +79,8 @@ export default function StepOne() {
           <select
             name="City"
             id="City"
+            value={formData.City}
+            onChange={changeHandler}
             className="w-full px-2 py-2 font-bold bg-black border rounded outline-none border-slate-400"
           >
             <option value="Kolkata">Kolkata</option>
@@ -100,10 +96,12 @@ export default function StepOne() {
             name="Address"
             id="Address"
             rows="5"
+            value={formData.Address}
+            onChange={changeHandler}
             placeholder="Message"
             className="w-full px-2 py-2 font-bold bg-black border rounded outline-none resize-y border-slate-400 min-h-[150px]"
           ></textarea>
-        </div> */}
+        </div> 
       </div>
     </form>
   );
