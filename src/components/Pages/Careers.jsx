@@ -2,26 +2,26 @@ import React, { useState } from "react";
 import StepOne from "../Career/StepOne";
 import StepTwo from "../Career/StepTwo";
 import StepThree from "../Career/StepThree";
+import { FaCheck } from "react-icons/fa";
 
 export default function Careers() {
   const [page, setPage] = useState(1);
-  console.log(page)
+  console.log(page);
 
-  // const steps = [
-  //   {
-  //     id: 1,
-  //     title: "Basic Info",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Professional Details",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Portfolio",
-  //   },
-  // ];
-
+  const steps = [
+    {
+      id: 1,
+      title: "Basic Info",
+    },
+    {
+      id: 2,
+      title: "Professional Details",
+    },
+    {
+      id: 3,
+      title: "Portfolio",
+    },
+  ];
 
   return (
     <div>
@@ -41,8 +41,40 @@ export default function Careers() {
         </div>
 
         <div>
-          <div>
-            <p>Steps / {page}</p>
+          <div className="relative flex justify-center w-full mb-2">
+            {steps.map((item) => (
+              <>
+                <div className="flex flex-col items-center " key={item.id}>
+                  <button
+                    className={`grid cursor-default aspect-square w-[34px] place-items-center rounded-full border-[1px] 
+                       ${
+                         page === item.id
+                           ? "bg-white border-yellow-50 text-black"
+                           : "text-white bg-[#FD0F00]"
+                       } 
+                        ${page > item.id && "bg-yellow-50 text-yellow-50"}`}
+                  >
+                    {page > item.id ? (
+                      <FaCheck className="font-bold text-black" />
+                    ) : (
+                      item.id
+                    )}
+                  </button>
+                  <p className="text-xs text-center md:text-sm">{item.title}</p>
+                </div>
+                {item.id !== steps.length && (
+                  <>
+                    <div
+                      className={`h-[calc(34px/2)] w-[33%]  border-dashed border-b-2 ${
+                        page > item.id ? "border-yellow-50" : "border-red-500"
+                      } `}
+                    >
+                      {" "}
+                    </div>
+                  </>
+                )}
+              </>
+            ))}
           </div>
 
           {page === 1 && <StepOne />}
@@ -56,7 +88,7 @@ export default function Careers() {
                   className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300"
                   onClick={() => {
                     const prevPage = page - 1;
-                    setPage(prevPage)
+                    setPage(prevPage);
                   }}
                 >
                   Previos
@@ -67,7 +99,7 @@ export default function Careers() {
                   className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300"
                   onClick={() => {
                     const nextPage = page + 1;
-                    setPage(nextPage)
+                    setPage(nextPage);
                   }}
                 >
                   Next
