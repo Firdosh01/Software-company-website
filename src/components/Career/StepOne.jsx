@@ -11,6 +11,7 @@ export default function StepOne({formData, setFormData, changeHandler}) {
             Full Name <sup className="text-[#FD0F00] select-none">*</sup>
           </label>
           <input
+          required
             type="text"
             name="FullName"
             id="FullName"
@@ -59,6 +60,7 @@ export default function StepOne({formData, setFormData, changeHandler}) {
             <sup className="text-[#FD0F00] select-none">*</sup>
           </label>
           <select
+          required
             name="AboutUs"
             id="AboutUs"
             value={formData.AboutUs}
@@ -77,6 +79,7 @@ export default function StepOne({formData, setFormData, changeHandler}) {
             <sup className="text-[#FD0F00] select-none">*</sup>
           </label>
           <select
+          required
             name="City"
             id="City"
             value={formData.City}
@@ -93,13 +96,14 @@ export default function StepOne({formData, setFormData, changeHandler}) {
             Present Address <sup className="text-[#FD0F00] select-none">*</sup>
           </label>
           <textarea
+          required
             name="Address"
             id="Address"
             rows="5"
             value={formData.Address}
             onChange={changeHandler}
             placeholder="Message"
-            className="w-full px-2 py-2 font-bold bg-black border rounded outline-none resize-y border-slate-400 min-h-[150px]"
+            className="w-full px-2 py-2 font-bold bg-black border rounded outline-none resize-y border-slate-400 min-h-[150px] duration-300"
           ></textarea>
         </div> 
       </div>

@@ -3,20 +3,21 @@ import StepOne from "../Career/StepOne";
 import StepTwo from "../Career/StepTwo";
 import StepThree from "../Career/StepThree";
 import { FaCheck } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 export default function Careers() {
   const [page, setPage] = useState(1);
   console.log(page);
   const [formData, setFormData] = useState({
-    // stepOneData 
+    // stepOneData
     FullName: "",
     ContactNo: "",
     Email: "",
     AboutUs: "Ads",
     City: "Ranchi",
     Address: "",
-    
-    // stepTwoData 
+
+    // stepTwoData
     ExperienceinYears: "",
     HighestQualification: "PG",
     CurrentDesignation: "",
@@ -24,16 +25,49 @@ export default function Careers() {
     CurrentSalary: "",
     ExpectedSalary: "",
     NoticePeriod: "",
-    SkillSet: ""  
-    
-  })
+    SkillSet: "",
 
-    const changeHandler = (e) => {
+    // stepThreeData
+    Resume: "",
+    Portfolio: "",
+    PortfolioLink: "",
+    ExperienceDetails: "",
+  });
+
+  const changeHandler = (e) => {
     setFormData((prevData) => ({
       ...prevData,
-      [e.target.name]: e.target.value
-    }))
-  }
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const clearForm = () => {
+    setFormData({
+      // stepOneData
+      FullName: "",
+      ContactNo: "",
+      Email: "",
+      AboutUs: "Ads",
+      City: "Ranchi",
+      Address: "",
+
+      // stepTwoData
+      ExperienceinYears: "",
+      HighestQualification: "PG",
+      CurrentDesignation: "",
+      CurrentEmployer: "",
+      CurrentSalary: "",
+      ExpectedSalary: "",
+      NoticePeriod: "",
+      SkillSet: "",
+
+      // stepThreeData
+      Resume: "",
+      Portfolio: "",
+      PortfolioLink: "",
+      ExperienceDetails: "",
+    });
+  };
 
   const steps = [
     {
@@ -87,12 +121,14 @@ export default function Careers() {
                       item.id
                     )}
                   </button>
-                  <p className="text-xs text-center md:text-sm">{item.title}</p>
+                  <p className="text-xs text-center md:text-sm text-[#FD0F00]">
+                    {item.title}
+                  </p>
                 </div>
                 {item.id !== steps.length && (
                   <>
                     <div
-                      className={`h-[calc(34px/2)] w-[33%]  border-dashed border-b-2 ${
+                      className={`h-[calc(34px/2)] w-[33%]   border-b-2 ${
                         page > item.id ? "border-yellow-50" : "border-red-500"
                       } `}
                     >
@@ -104,32 +140,56 @@ export default function Careers() {
             ))}
           </div>
 
-          {page === 1 && <StepOne formData={formData} setFormData={setFormData} changeHandler={changeHandler} />}
-          {page === 2 && <StepTwo formData={formData} setFormData={setFormData} changeHandler={changeHandler} />}
-          {page === 3 && <StepThree />}
+          {page === 1 && (
+            <StepOne
+              formData={formData}
+              setFormData={setFormData}
+              changeHandler={changeHandler}
+            />
+          )}
+          {page === 2 && (
+            <StepTwo
+              formData={formData}
+              setFormData={setFormData}
+              changeHandler={changeHandler}
+            />
+          )}
+          {page === 3 && (
+            <StepThree
+              formData={formData}
+              setFormData={setFormData}
+              changeHandler={changeHandler}
+            />
+          )}
 
           <div>
-            <div className="flex flex-col gap-3 py-5">
+            <div className="flex gap-3 py-5">
               {page > 1 && (
                 <button
-                  className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300"
+                  className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300 w-full"
                   onClick={() => {
-                    setPage((currPage) => currPage - 1 )
+                    setPage((currPage) => currPage - 1);
                   }}
                 >
                   Previos
                 </button>
               )}
-              {page < 3 && (
-                <button
-                  className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300"
-                  onClick={() => {
-                    setPage((currPage) => currPage + 1)
-                  }}
-                >
-                  Next
-                </button>
-              )}
+
+              <button
+                className="bg-[#FD0F00] text-white hover:bg-white hover:text-black p-4 duration-300 w-full"
+                onClick={() => {
+                  if (page < steps.length) {
+                    setPage((currPage) => currPage + 1);
+                  } else {
+                    console.log("Form Data", formData);
+                    toast.success("application submited")
+                    setPage(1)
+                    clearForm();
+                  }
+                }}
+              >
+                {page === steps.length ? "Submit" : "Next"}
+              </button>
             </div>
           </div>
         </div>
