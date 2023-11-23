@@ -7,7 +7,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-10">
+    <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-5">
       <div className="flex flex-wrap items-start justify-between gap-5 py-10 text-white center fade">
         <div>
           <Link to="/">

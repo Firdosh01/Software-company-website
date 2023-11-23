@@ -55,8 +55,7 @@ export const navigation = [
   },
   {
     id: 4,
-    nav: "Portfolio",
-    path: "/portfolio",
+    Port: "Portfolio",
     downAroow: <FaAngleDown />
   },
   {
