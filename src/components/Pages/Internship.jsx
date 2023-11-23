@@ -34,7 +34,7 @@ export default function Internship() {
               />
             </div>
             <div className="absolute bg-[#FD0F00] text-center py-3 px-7 text-white md:-bottom-9 -bottom-16 left-[20%]">
-              <h1 className="font-semibold text-7xl">7</h1>
+              <h1 className="text-3xl font-semibold md:text-7xl">7</h1>
               <span className="uppercase ">Years of experience</span>
             </div>
           </div>

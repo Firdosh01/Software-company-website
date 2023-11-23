@@ -11,27 +11,31 @@ export default function About() {
         <div className="relative flex flex-col items-center justify-between gap-5 py-10 md:flex-row">
           <div className="md:w-[50%] relative">
             <span className=" ml-7 about-arrow text-[#FD0F00]">ABOUT US</span>
-            <h1 className="text-3xl lg:text-6xl md:text-4xl">
+            <h1 className="py-3 text-3xl lg:text-6xl md:text-4xl">
               We help you build your online identity
             </h1>
-            <p className="py-5 text-sm font-medium ">
+            <p className="py-5 text-base font-medium ">
               Hence, we understand your requirements and Infuse our interaction
               with innovative concepts around strategy, technology and creative
               design. By adopting this Wow and How approach, we turn your
               distinct needs into digital reality.
             </p>
             <div className="py-8 text-center md:text-left">
-              <button className="py-2 text-white hover:bg-white hover:text-black duration-300 bg-[#FD0F00] px-10 flex gap-2 items-center">
+              <button className="py-4 text-white hover:bg-white hover:text-black duration-300 bg-[#FD0F00] px-10 flex gap-2 items-center">
                 Get Connected <VscArrowSmallRight className="text-xl " />
               </button>
             </div>
           </div>
-          <div className="md:w-[50%]">
+          <div className="md:w-[50%] relative">
             <img
               src={ImageOne}
               alt=""
-              className="h-[650px] w-full object-cover bg-center"
+              className="object-cove max-w-[100%]"
             />
+              <div className="absolute bg-[#FD0F00] text-center py-3 px-7 text-white md:-bottom-9 -bottom-12 left-[20%]">
+              <h1 className="text-3xl font-semibold md:text-7xl">7</h1>
+              <span className="uppercase ">Years of experience</span>
+            </div>
           </div>
         </div>
 
