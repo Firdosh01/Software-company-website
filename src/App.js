@@ -9,6 +9,7 @@ import Portfolio from './components/Pages/Portfolio';
 import Careers from './components/Pages/Careers';
 import Footer from './components/common/Footer';
 import WebsiteDesigning from './components/Pages/WebsiteDesigning';
+import Internship from './components/Pages/Internship';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='services' element={<Services />} />
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='careers' element={<Careers />} />
+        <Route path='internship' element={<Internship />} />
         <Route path='website-designing' element={<WebsiteDesigning />} />
       </Routes>
       <Footer />
