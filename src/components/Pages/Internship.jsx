@@ -1,6 +1,9 @@
 import React from "react";
 import firstImg from "../../assets/34.jpg";
 import secondImg from "../../assets/man.jpg";
+import slideOneImg from "../../assets/09.jpg";
+import slideTwoImg from "../../assets/010.jpg";
+import slideThreeImg from "../../assets/011.jpg";
 export default function Internship() {
   return (
     <div>
@@ -20,7 +23,7 @@ export default function Internship() {
             </p>
           </div>
 
-          <div  className=" lg:w-[50%] relative">
+          <div className=" lg:w-[50%] relative">
             <div className="flex">
               <img
                 src={secondImg}
@@ -39,6 +42,114 @@ export default function Internship() {
             </div>
           </div>
         </div>
+        <section>
+          <div className="flex flex-col justify-between py-10 lg:items-center lg:flex-row pb-44">
+            <div className="lg:w-[58%] md:block hidden">
+              <div className="relative">
+                <div className="slideOneImg">
+                  <div className="textOneImg">
+                    <p className="text-lg">
+                      Learn how to create marketing plans for a medical
+                      institution with a focus on public welfare.
+                    </p>
+                    <span className="pt-2 text-2xl font-semibold">
+                      Marketing Plan
+                    </span>
+                    <span className="pt-2 text-2xl font-semibold">
+                      Other Market Reach
+                    </span>
+                    <span className="pt-2 text-2xl font-semibold">
+                      Result Tracking
+                    </span>
+                  </div>
+                </div>
+                <div className="slideTwoImg">
+                <div className="textTwoImg">
+                    <p className="text-lg">
+                    Increasing customer retention through generating more trust among the masses.
+                    </p>
+                    <span className="pt-1 text-xl font-semibold">
+                    Marketing Camp Referral
+                    </span>
+                    <span className="pt-1 text-xl font-semibold">
+                    Generation Customer
+                    </span>
+                    <span className="pt-1 text-xl font-semibold">
+                    Classification
+                    </span>
+                  </div>
+                </div>
+                
+              </div>
+              <div className=" slideThreeImg">
+                  <div className="textThreeImg">
+                    <p>It is very important to learn & excel in digital skills to develop any enterprise.</p>
+                    <span className="pt-1 text-xl font-semibold">
+                    Social Media Planning
+                    </span>
+                    <span className="pt-1 text-xl font-semibold">
+                    Lead Management
+                    </span>
+                    <span className="pt-1 text-xl font-semibold">
+                    FB & Google Ads
+                    </span>
+                  </div>
+                </div>
+            </div>
+            <div className="lg:w-[40%] md:pt-14">
+              <h1 className="md:text-6xl text-[#FD0F00] font-semibold pb-2 text-3xl">
+                Join Us Today
+              </h1>
+              <form>
+                <div className="flex flex-col">
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <div className="w-full">
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        className="w-full px-2 py-3 font-bold text-white bg-black border rounded outline-none select-none border-slate-400 "
+                      />
+                    </div>
+                    <div className="w-full">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        className="w-full px-2 py-3 font-bold text-white bg-black border rounded outline-none select-none border-slate-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="py-1">
+                    <input
+                      type="text"
+                      placeholder="Contact No."
+                      className="w-full px-2 py-3 font-bold text-white bg-black border rounded outline-none select-none border-slate-400"
+                    />
+                  </div>
+                  <div className="py-1">
+                    <input
+                      type="text"
+                      placeholder="College"
+                      className="w-full px-2 py-3 font-bold text-white bg-black border rounded outline-none select-none border-slate-400"
+                    />
+                  </div>
+                  <div className="py-1">
+                    <textarea
+                      name=""
+                      id=""
+                      placeholder="Address"
+                      className="w-full px-2 py-3 font-bold bg-black border rounded outline-none resize-y border-slate-400 min-h-[50px] duration-300 select-none"
+                    ></textarea>
+                  </div>
+                  <div className="">
+                    <button className="py-3 w-full text-white hover:bg-white hover:text-black duration-300 bg-[#FD0F00] px-10 flex gap-2 items-center text-center justify-center uppercase">
+                      send message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
