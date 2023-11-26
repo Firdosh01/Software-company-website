@@ -71,7 +71,7 @@ export const navigation = [
   {
     id: 7,
     nav: "Contact",
-    path: "/contact",
+    path: "/contact-us/",
   },
 ];
 
