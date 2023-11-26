@@ -7,13 +7,13 @@ export default function Contact() {
   return (
     <div>
       <div className="w-11/12 max-w-screen-xl px-1 mx-auto text-white relativ lg:px-10">
-        <div className="flex flex-col-reverse items-center justify-between px-5 py-16 lg:flex-row">
-          <div className="lg:w-[40%]">
+        <div className="flex flex-col-reverse justify-between py-16 md:px-5 items-cente lg:flex-row">
+          <div className="lg:w-[40%] lg:mt-0 mt-10">
             <div className="relative ">
               <span className=" ml-7 about-arrow text-[#FD0F00] uppercase">
                 contact us
               </span>
-              <h1 className="py-2 text-7xl">Get in touch</h1>
+              <h1 className="py-2 text-4xl xl:text-7xl md:text-5xl">Get in touch</h1>
             </div>
             <form className="">
               <div>
@@ -103,13 +103,15 @@ export default function Contact() {
             <div className="flex">
               <img
                 src={contactOneImg}
-                alt=""
-                className="object-cover lg:max-w-[40%] md:h-[100%]"
+                alt="contactOneImg"
+                loading="lazy"
+                className="object-cover w-1/2"
               />
               <img
                 src={contactTwoImg}
-                alt=""
-                className="object-cove lg:max-w-[40%] md:h-[100%] bg-center"
+                alt="contactTwoImg"
+                loading="lazy"
+                className="object-cover w-1/2"
               />
             </div>
             <div>
@@ -146,21 +148,21 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between gap-1 py-10 mx-auto">
-        <div className="w-[50%]">
+      <div className="flex flex-col justify-between gap-3 py-10 mx-auto md:gap-1 md:flex-row">
+        <div className="md:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1885235.684605867!2d88.432226!3d22.6500246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f783d1bb31d%3A0x631c41d5cdea2fc2!2sEstrella%20Advertising%20Private%20Limited%20%7C%20Digital%20Marketing%20Agency%20in%20Kolkata!5e0!3m2!1sen!2sus!4v1700974335367!5m2!1sen!2sus"
-            className=" w-[100%] min-h-[500px]"
+            className=" w-[100%] md:min-h-[500px] h-auto"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
-        <div className="w-[50%]">
+        <div className="md:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d468871.53059729096!2d85.90322!3d23.349883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1108cb65905%3A0xf097d26cfaf5112f!2sEstrella%20Advertising%20Pvt%20Ltd%20%7C%20Best%20Digital%20Marketing%20Agency!5e0!3m2!1sen!2sus!4v1700974577303!5m2!1sen!2sus"
-            className=" w-[100%] min-h-[500px]"
+            className=" w-[100%] md:min-h-[500px] h-auto"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

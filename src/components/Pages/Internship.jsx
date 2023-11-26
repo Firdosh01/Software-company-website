@@ -8,7 +8,7 @@ export default function Internship() {
   return (
     <div>
       <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-10">
-        <div className="flex flex-col justify-between gap-5 py-16 lg:flex-row lg:items-center">
+        <div className="flex flex-col justify-between gap-5 px-5 py-16 lg:flex-row lg:items-center">
           <div className="lg:w-[50%] relative">
             <span className=" ml-7 about-arrow text-[#FD0F00] ">
               INTERNSHIP
@@ -43,7 +43,7 @@ export default function Internship() {
           </div>
         </div>
         <section>
-          <div className="flex flex-col justify-between py-10 lg:items-center lg:flex-row pb-44">
+          <div className="flex flex-col justify-between py-20 lg:items-center lg:flex-row pb44">
             <div className="lg:w-[58%] md:block hidden">
               <div className="relative">
                 <div className="slideOneImg">
