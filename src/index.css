@@ -127,6 +127,7 @@ body {
     opacity: 1;
   }
 }
+
 .slideOneImg {
   position: relative;
   left: 30px;
@@ -149,12 +150,12 @@ body {
   position: absolute;
   bottom: -100%;
   right: 0;
-  transition: .7s;
+  transition: 0.7s;
 }
 .slideOneImg:hover .textOneImg {
   bottom: 0;
 }
-.slideTwoImg{
+.slideTwoImg {
   position: absolute;
   bottom: -150px;
   right: -10px;
@@ -177,16 +178,16 @@ body {
   position: absolute;
   bottom: -100%;
   right: 0;
-  transition: .7s;
+  transition: 0.7s;
 }
 .slideTwoImg:hover .textTwoImg {
   bottom: 0;
 }
-.slideThreeImg{
+.slideThreeImg {
   position: relative;
   top: 30px;
   width: 45%;
-  height: 220px;  
+  height: 220px;
   background: url(./assets/06.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,7 +204,7 @@ body {
   position: absolute;
   bottom: -100%;
   right: 0;
-  transition: .7s;
+  transition: 0.7s;
 }
 .slideThreeImg:hover .textThreeImg {
   bottom: 0;
