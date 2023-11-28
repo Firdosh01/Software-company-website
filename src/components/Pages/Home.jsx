@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-10">
-        <div className="relative py-12 text-white home">
-          <div className="fadeInDown">
-            <span className="font-semibold ml-7 left-arrow">
+        <div className="relative py-12 text-white ">
+          <div className="fadeInDown ml-7">
+            <span className="font-semibold left-arrow">
               DIGITAL MARKETING AGENCY
             </span>
           </div>

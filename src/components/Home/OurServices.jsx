@@ -11,6 +11,7 @@ export default function OurServices() {
           Our Services
         </h1>
       </div>
+      
       <div className="relative grid grid-cols-1 gap-3 py-5 md:grid-cols-3 gap-y-8">
         {Services.map(({ img, heading }) => (
           <div className="relative">

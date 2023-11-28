@@ -11,7 +11,7 @@ export default function About() {
         <div className="relative flex flex-col items-center justify-between gap-5 py-10 md:flex-row">
           <div className="md:w-[50%] relative">
             <span className=" ml-7 about-arrow text-[#FD0F00]">ABOUT US</span>
-            <h1 className="py-3 text-3xl lg:text-6xl md:text-4xl">
+            <h1 className="py-3 text-3xl lg:text-6xl md:text-4xl" >
               We help you build your online identity
             </h1>
             <p className="py-5 text-base font-medium ">
@@ -64,7 +64,7 @@ export default function About() {
 
         <div>
           <div className="py-5">
-            <h1 className="text-3xl leading-[70px] text-center font-semibol">
+            <h1 className="text-3xl  md:leading-[50px] leading-[30px] text-center font-semibol">
               Innovation And Creativity At The Heart Of Everything We Do
             </h1>
           </div>
@@ -72,7 +72,7 @@ export default function About() {
 
         <div>
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
               {AboutCard.map((aboutCard) => (
                 <AboutCards 
                 icon={aboutCard.icon}

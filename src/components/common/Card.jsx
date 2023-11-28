@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({icon, heading, desc}) {
   return (
-    <div>
+    <div className="items-stretch grid-cols-1 md:grid">
       <div className="py-5  px-3 bg-[#1D1D1D]  rounded hover:border-[#FD0F00] border border-[#1D1D1D] duration-300">
         <div className="text-4xl text-[#FD0F00]">
           <Link>{icon}</Link>
