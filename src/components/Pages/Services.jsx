@@ -6,7 +6,14 @@ export default function Services() {
     <div>
       <div className="relative w-11/12 max-w-screen-xl mx-auto text-white">
         <div>
-          <div className="grid grid-cols-1 py-16 md:grid-cols-3 gap-7">
+        <span className=" ml-7 about-arrow text-[#FD0F00] md:hidden block pt-5">WHAT WE OFFER</span>
+        <p className="block pt-3 md:hidden">Our core values of innovation and creativity drive all we do</p>
+          <h1 className="py-5 text-4xl text-left md:text-center md:text-5xl text-services">
+            Our Services
+          </h1>
+        </div>
+        <div>
+          <div className="grid grid-cols-1 py-10 md:grid-cols-3 gap-7">
             {ServicesCards.map((aboutCard) => (
               <ServicesCard
                 icon={aboutCard.icon}
@@ -19,7 +26,7 @@ export default function Services() {
 
         <div>
           <div>
-            <h1 className="text-7xl text-center py-7 text-[#FD0F00]">
+            <h1 className="text-7xl text-center py-7 text-[#d3a09c]">
               <span className="font-extrabold ">Process</span> <span>we</span>{" "}
               Follow
             </h1>

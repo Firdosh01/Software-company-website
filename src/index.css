@@ -33,9 +33,9 @@ body {
 .active {
   color: red;
 }
-.home .left-arrow {
+/* .home .left-arrow {
   position: relative;
-}
+} */
 .left-arrow::after {
   position: absolute;
   content: "";
