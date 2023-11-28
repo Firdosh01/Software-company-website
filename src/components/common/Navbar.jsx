@@ -54,7 +54,7 @@ export default function Navbar() {
           
           {/* <nav> */}
           {menu && (
-            <ul className={`${menu ? "left-0" : "-left-[100%] delay-1000 duration-1000"} absolute top-0  md:hidden w-[70%] z-10 h-screen bg-black px-3 py-3 transition duration-500 ease-in-out delay-700`}>
+            <ul className={`${menu ? "left-0" : "-left-[100%] delay-1000 duration-1000"} fixed top-0  md:hidden w-[70%] z-10 h-screen bg-black px-3 py-3 transition duration-500 ease-in-out delay-700`}>
             <div>
             <Link to="/">
               <img src={Estrella} alt="" className="w-[75%] h-[40px]" />
@@ -65,7 +65,7 @@ export default function Navbar() {
                   key={navbar.id}
                   className="relative flex items-center py-3 text-lg font-medium text-white md:gap-2 hover:text-red-600 "
                 >
-                  <NavLink to={navbar.path}>{navbar.nav}</NavLink>
+                  <NavLink onClick={() => setMenu(!menu)} to={navbar.path} smooth duration={500}>{navbar.nav}</NavLink>
 
                   <div className="flex items-center gap-3 group">
                     <p>{navbar.Port}</p>

@@ -25,13 +25,13 @@ export default function Home() {
             convenience, fun and value in our Creativity.
           </p> 
           </div>
+            <div className="block py-8 text-center md:text-left w-fit">
           <Link to="contact">
-            <div className="py-8 text-center md:text-left w-fit">
-              <button className="py-5 text-white bg-[#FD0F00] px-14 flex gap-2 items-center">
+              <button className="py-5 text-white bg-[#FD0F00] px-14 flex gap-2 items-center ">
                 Let's Get Connected <VscArrowSmallRight className="text-xl " />
               </button>
-            </div>
           </Link>
+            </div>
         </div>
 
         {/* our clients  */}
