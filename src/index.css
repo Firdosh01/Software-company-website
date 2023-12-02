@@ -209,3 +209,21 @@ body {
 .slideThreeImg:hover .textThreeImg {
   bottom: 0;
 }
+
+
+.WhatsApp-cont{
+  position: fixed;
+  bottom: 70px;
+  animation:  circle-img-anim 1.5s ease-in infinite;
+  border-radius: 100%;
+  z-index: 50;
+}
+
+@keyframes circle-img-anim {
+  0%{
+      box-shadow: 0 0 0 1px #00d084;
+  }
+  100%{
+      box-shadow:  0 0 0 30px transparent;
+  }
+}

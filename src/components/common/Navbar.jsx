@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { TbClearAll } from "react-icons/tb";
 import { IoMdClose } from "react-icons/io";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -15,7 +16,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-3">
           <div className="fadeInLeft">
             <Link to="/">
-              <img src={Estrella} alt="" className="w-[90%] h-[40px] aspect-auto" />
+              <img
+                src={Estrella}
+                alt=""
+                className="w-[90%] h-[40px] aspect-auto"
+              />
             </Link>
           </div>
 
@@ -50,22 +55,30 @@ export default function Navbar() {
             </div>
           </div>
 
-
-          
-          {/* <nav> */}
           {menu && (
-            <ul className={`${menu ? "left-0" : "-left-[100%] delay-1000 duration-1000"} fixed top-0  md:hidden w-[70%] z-10 h-screen bg-black px-3 py-3 transition duration-500 ease-in-out delay-700`}>
-            <div>
-            <Link to="/">
-              <img src={Estrella} alt="" className="w-[75%] h-[40px]" />
-            </Link>
-          </div>
+            <ul
+              className={`${
+                menu ? "left-0" : "-left-[100%] delay-1000 duration-1000"
+              } fixed top-0  md:hidden w-[70%] z-10 h-screen bg-black px-3 py-3 transition duration-500 ease-in-out delay-700`}
+            >
+              <div>
+                <Link to="/">
+                  <img src={Estrella} alt="" className="w-[75%] h-[40px]" />
+                </Link>
+              </div>
               {navigation.map((navbar) => (
                 <li
                   key={navbar.id}
                   className="relative flex items-center py-3 text-lg font-medium text-white md:gap-2 hover:text-red-600 "
                 >
-                  <NavLink onClick={() => setMenu(!menu)} to={navbar.path} smooth duration={500}>{navbar.nav}</NavLink>
+                  <NavLink
+                    onClick={() => setMenu(!menu)}
+                    to={navbar.path}
+                    smooth
+                    duration={500}
+                  >
+                    {navbar.nav}
+                  </NavLink>
 
                   <div className="flex items-center gap-3 group">
                     <p>{navbar.Port}</p>
@@ -82,11 +95,16 @@ export default function Navbar() {
               ))}
             </ul>
           )}
-
-          {/* </nav> */}
         </div>
-    </div>
-    </div>
 
+        <div className="WhatsApp-cont md:right-[100px] right-[30px]">
+          <a href="https://api.whatsapp.com/send/?phone=%2B918102607915&text&type=phone_number&app_absent=0" target="_blank">
+            <div className="bg-[#2ecb71] text-white w-[50px] h-[50px] flex justify-center items-center text-3xl rounded-full">
+              <IoLogoWhatsapp />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
