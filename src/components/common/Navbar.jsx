@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Estrella from "../../assets/ESTRELLA-LOGO-White-2048x384.png";
 import { navigation } from "../common/constent";
 import { Link, NavLink } from "react-router-dom";
@@ -9,6 +9,24 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+      const handleScroll = () => {
+          if (window.scrollY > 30) {
+              setVisible(true)
+          }
+          else {
+              setVisible(false)
+          }
+      };
+      window.addEventListener('scroll', handleScroll) 
+
+      return () => {
+          window.addEventListener('scroll', handleScroll)
+
+      }
+  })
 
   return (
     <div>
@@ -96,8 +114,8 @@ export default function Navbar() {
             </ul>
           )}
         </div>
-
-        <div className="WhatsApp-cont md:right-[100px] right-[30px]">
+        
+        <div className={`${visible ? "md:right-[100px] right-[30px] duration-700" : "-right-full" } WhatsApp-cont `}>
           <a href="https://api.whatsapp.com/send/?phone=%2B918102607915&text&type=phone_number&app_absent=0" target="_blank">
             <div className="bg-[#2ecb71] text-white w-[50px] h-[50px] flex justify-center items-center text-3xl rounded-full">
               <IoLogoWhatsapp />

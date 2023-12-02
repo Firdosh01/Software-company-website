@@ -26,7 +26,7 @@ export default function Services() {
 
         <div>
           <div>
-            <h1 className="text-7xl text-center py-7 text-[#d3a09c]">
+            <h1 className="text-7xl text-center py-7 text-[#FD0F00]">
               <span className="font-extrabold ">Process</span> <span>we</span>{" "}
               Follow
             </h1>

@@ -53,7 +53,7 @@ export default function Testmonials() {
                 {Testmonial.map((feedback) => (
                   <div>
                     <SwiperSlide>
-                      <div className="text-white ">
+                      <div className="text-white" key={feedback.id}>
                         <p className=" max-w-[500px]">{feedback.feedback}</p>
                         <div className="flex items-center gap-3 py-3">
                           <div>

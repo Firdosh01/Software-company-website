@@ -27,14 +27,16 @@ export default function OurClients() {
           }}
         >
           <div className="flex gap-6">
-            {Clients.map(({logo}) => (
+            {Clients.map((client) => (
               <SwiperSlide>
+                <div key={client.id}>
                 <img
-                  src={logo}
+                  src={client.logo}
                   alt="ClientLogo"
                   width={200}
                   loading="lazy"
                 />
+                </div>
               </SwiperSlide>
             ))}
           </div>
