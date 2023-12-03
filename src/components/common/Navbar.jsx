@@ -36,14 +36,14 @@ export default function Navbar() {
             <Link to="/">
               <img
                 src={Estrella}
-                alt=""
+                alt="EstrellaLogo"
                 className="w-[90%] h-[40px] aspect-auto"
               />
             </Link>
           </div>
 
           <nav>
-            <ul className="items-center hidden lg:gap-5 md:flex fadeInDown">
+            <ul className="items-center hidden gap-0 lg:gap-3 md:flex fadeInDown">
               {navigation.map((navbar) => (
                 <li
                   key={navbar.id}

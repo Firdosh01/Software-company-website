@@ -4,6 +4,7 @@ import { VscArrowSmallRight } from "react-icons/vsc";
 import OurClients from "../Home/OurClients";
 import OurServices from "../Home/OurServices";
 import Testmonials from "../Home/Testmonials";
+import { HiOutlinePaperAirplane } from "react-icons/hi2";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
             convenience, fun and value in our Creativity.
           </p> 
           </div>
-            <div className="block py-8 text-center md:text-left w-fit">
+            <div className="block py-8 text-center md:text-left w-fit ">
           <Link to="contact">
               <button className="py-5 text-white bg-[#FD0F00] px-14 flex gap-2 items-center ">
                 Let's Get Connected <VscArrowSmallRight className="text-xl " />
@@ -35,14 +36,14 @@ export default function Home() {
         </div>
 
         {/* our clients  */}
-        <div>
+        <section>
           <OurClients />
-        </div>
+        </section>
 
         {/* our services  */}
-        <div>
+        <section>
           <OurServices />
-        </div>
+        </section>
       </div>
 
       <div className="w-11/12 mx-auto max-w-screen-2xl">
@@ -61,9 +62,11 @@ export default function Home() {
           <h1 className="py-5 text-2xl font-semibold text-center text-white md:text-4xl">
             Let's work together! Send us a message
           </h1>
-          <span className="md:text-4xl text-center font-semibol hover:text-white text-[#FD0F00] duration-300 text-xl cursor-pointer">
-            info@firdosh.com
+          <div>
+          <span className="md:text-4xl text-center font-semibold hover:text-white text-[#FD0F00] duration-300 text-xl cursor-pointer flex justify-center items-center">
+          <a href="mailto:mdfirdosha37@gmail.com" className="flex gap-2"><div className="-rotate-45 "><HiOutlinePaperAirplane /></div> info@firdosh.com</a>
           </span>
+          </div>
         </div>
       </div>
     </div>

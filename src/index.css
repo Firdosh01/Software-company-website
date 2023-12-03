@@ -57,18 +57,14 @@ body {
 }
 .Service-Img {
   object-fit: cover;
-  object-position: center;
-  position: absolute;
   height: 100%;
   width: 100%;
   transform: scale(none);
   transition-duration: 300ms;
-  filter: grayscale();
 }
 .Service-Img:hover {
   transform: scale(1.3);
   transition-duration: 500ms;
-  filter:none;
 }
 .about-arrow::after {
   content: "";

@@ -31,6 +31,7 @@ export default function About() {
               src={ImageOne}
               alt=""
               className="object-cove max-w-[100%]"
+              loading="lazy"
             />
               <div className="absolute bg-[#FD0F00] text-center py-3 px-7 text-white md:-bottom-9 -bottom-12 left-[20%]">
               <h1 className="text-3xl font-semibold md:text-7xl">7</h1>
@@ -75,6 +76,7 @@ export default function About() {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
               {AboutCard.map((aboutCard) => (
                 <AboutCards 
+                id={aboutCard.id}
                 icon={aboutCard.icon}
                 heading={aboutCard.heading}
                 desc={aboutCard.desc}

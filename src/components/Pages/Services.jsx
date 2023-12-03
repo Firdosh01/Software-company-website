@@ -14,11 +14,12 @@ export default function Services() {
         </div>
         <div>
           <div className="grid grid-cols-1 py-10 md:grid-cols-3 gap-7">
-            {ServicesCards.map((aboutCard) => (
+            {ServicesCards.map((serviceCard) => (
               <ServicesCard
-                icon={aboutCard.icon}
-                heading={aboutCard.heading}
-                desc={aboutCard.desc}
+              id={serviceCard.id}
+                icon={serviceCard.icon}
+                heading={serviceCard.heading}
+                desc={serviceCard.desc}
               />
             ))}
           </div>

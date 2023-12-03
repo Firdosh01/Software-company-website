@@ -4,14 +4,34 @@ import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-5">
-      <div className="flex flex-wrap items-start justify-between gap-5 py-10 text-white center fade">
+    <footer className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-5">
+      <div className="relative pt-3">
+        <div className="flex items-center justify-center text-white">
+          <div onClick={() => scrollToTop()} className="p-3 mb-3 text-2xl text-center cursor-pointer">
+            <FaArrowUp  />
+          </div>
+        </div>
+        <div className="absolute left-0 w-[48%] h-[1px] bg-white top-1/2"></div>
+        <div className="absolute right-0 w-[48%] h-[1px] bg-white top-1/2 "></div>
+      </div>
+      <div className="flex flex-wrap items-start gap-5 py-10 text-white md:gap-24 center fade">
         <div>
           <Link to="/">
-            <img src={estrella} alt="EstrellaImage" className="md:h-[60px] h-[40px]" />
+            <img
+              src={estrella}
+              alt="EstrellaImage"
+              className="md:w-[80%] md:h-[50px] h-[40px]"
+            />
           </Link>
           <p className="py-3  text-base md:w-[300px] leading-7">
             We blend creativity and technology to transform and grow our
@@ -34,10 +54,10 @@ export default function Footer() {
               <a href="tel:6200000078912">+91 6200000078912</a>
             </li>
             <li>
-              <a href="mailto:firdosha@gmail.com">firdosha@gmail.com</a>
+              <a href="mailto:mdfirdosha37@gmail.com">firdosha@gmail.com</a>
             </li>
             <li>
-              <a href="mailto:firdosha@gmail.com">info@firdosh.com</a>
+              <a href="mailto:mdfirdosha37@gmail.com">info@firdosh.com</a>
             </li>
           </ul>
         </div>
@@ -65,12 +85,9 @@ export default function Footer() {
             <a href="/">
               <FaLinkedin className="text-white duration-300 cursor-pointer hover:text-red-500" />
             </a>
-            <a href="/">
-              <AiFillTwitterCircle className="text-white duration-300 cursor-pointer hover:text-red-500" />
-            </a>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Testmonial } from "../common/constent";
-import ImageOne from "../../assets/austin-distel-DS1hZ4xzD7M-unsplash-compressed.jpg";
-import ImageTwo from "../../assets/charles-lamb-JL9MHpWEViA-unsplash-compressed.jpg";
+import ImageOne from "../../assets/012.jpg";
+import ImageTwo from "../../assets/013.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -11,7 +11,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Testmonials() {
   return (
-    <div>
+    <section>
       <div className="relative w-11/12 max-w-screen-xl px-1 mx-auto md:px-10">
         <div className="mt-14">
           <h1 className="text-4xl font-semibold text-center text-white">
@@ -24,7 +24,7 @@ export default function Testmonials() {
               <img
                 src={ImageOne}
                 alt=""
-                className="md:h-[400px]  object-cover w-full select-none"
+                className="lg:h-[400px] md:h-[300px]  object-cover w-full select-none"
                 loading="lazy"
               />
             </div>
@@ -32,13 +32,13 @@ export default function Testmonials() {
               <img
                 src={ImageTwo}
                 alt=""
-                className="md:h-[400px] object-cover relative md:top-11 top-20 w-full select-none"
+                className="lg:h-[400px] md:h-[300px] object-cover relative md:top-11 top-20 w-full select-none"
                 loading="lazy"
               />
             </div>
           </div>
 
-          <div className="md:max-w-[50%] w-full md:mt-0 mt-10">
+          <div className="md:max-w-[50%] w-full md:mt-0 mt-14">
             <Swiper
               slidesPerView={1}
               spaceBetween={30}
@@ -53,8 +53,8 @@ export default function Testmonials() {
                 {Testmonial.map((feedback) => (
                   <div>
                     <SwiperSlide>
-                      <div className="text-white" key={feedback.id}>
-                        <p className=" max-w-[500px]">{feedback.feedback}</p>
+                      <div className="text-white cursor-pointer select-none" key={feedback.id}>
+                        <p className=" max-w-[500px] lg:text-base md:text-sm">{feedback.feedback}</p>
                         <div className="flex items-center gap-3 py-3">
                           <div>
                             <img
@@ -64,7 +64,7 @@ export default function Testmonials() {
                             />
                           </div>
                           <div>
-                            <h1 className="text-xl font-semibold">
+                            <h1 className="font-semibold md:text-base lg:text-xl">
                               {feedback.name}
                             </h1>
                             <span className="font-semibold">
@@ -81,6 +81,6 @@ export default function Testmonials() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
