@@ -21,8 +21,8 @@ export default function Footer() {
             <FaArrowUp  />
           </div>
         </div>
-        <div className="absolute left-0 w-[48%] h-[1px] bg-white top-1/2"></div>
-        <div className="absolute right-0 w-[48%] h-[1px] bg-white top-1/2 "></div>
+        <div className="absolute left-0 md:w-[48%] h-[1px] bg-white top-1/2 w-[40%]"></div>
+        <div className="absolute right-0 md:w-[48%] h-[1px] bg-white top-1/2 w-[40%]"></div>
       </div>
       <div className="flex flex-wrap items-start gap-5 py-10 text-white md:gap-24 center fade">
         <div>

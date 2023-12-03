@@ -91,7 +91,7 @@ export default function Careers() {
           <span className="text-[#FD0F00] text-lg">
             Find the career of your dreams
           </span>
-          <h1 className="text-5xl max-w-[800px] text-center mx-auto py-4 font-semibold tracking-wide">
+          <h1 className="md:text-5xl text-2xl max-w-[800px] text-center mx-auto py-4 font-semibold tracking-wide">
             We're more than just a workplace. We're a family.
           </h1>
           <p>
