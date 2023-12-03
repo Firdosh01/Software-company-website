@@ -37,6 +37,20 @@ import { LuBrain } from "react-icons/lu";
 import { MdContentPaste } from "react-icons/md";
 import { PiCursorClickLight } from "react-icons/pi";
 
+// website designing
+
+import apploImg from '../../assets/website desiging/apollo.jpg'
+import vyanImg from '../../assets/website desiging/vayan.jpg'
+import nikolaGreenImg from '../../assets/website desiging/nikola-green.jpg'
+import cosmodentImg from '../../assets/website desiging/Cosmodent-360.jpg'
+import illumacImg from '../../assets/website desiging/illumac.jpg'
+import pranikLogisticImg from '../../assets/website desiging/pranik-logistic.jpg'
+import kdmFoundationImg from '../../assets/website desiging/kdm-foundation.jpg'
+import shaalestateImg from '../../assets/website desiging/shaalestate.jpg'
+import eliteCreationImg from '../../assets/website desiging/elite-creation.jpg'
+import ektaGroupImg from '../../assets/website desiging/ekta-group.jpg'
+import nilayamDhamImg from '../../assets/website desiging/nilayam-dham.jpg'
+
 export const navigation = [
   {
     id: 1,
@@ -268,4 +282,57 @@ export const ServicesCards = [
     heading: "Pay Per Click",
     desc: "SEO is great, but sometimes, your page needs a booster dose – which is where PPC or Pay per click steps in. Estrella is a PPC company offers PPC campaign management, making sure you put your money in the right place when it comes to your digital marketing plan."
   },
+]
+
+
+export const websiteDesigning = [
+  {
+    id: 1,
+    img: apploImg
+  },
+  {
+    id: 2,
+    img: vyanImg
+  },
+  {
+    id: 3,
+    img: nikolaGreenImg
+  },
+  {
+    id: 4,
+    img: cosmodentImg
+  },
+  {
+    id: 5,
+    img: illumacImg
+  },
+  {
+    id: 6,
+    img: pranikLogisticImg
+  },
+  {
+    id: 7,
+    img: kdmFoundationImg
+  },
+  {
+    id: 8,
+    img: shaalestateImg
+  },
+  {
+    id: 9,
+    img: eliteCreationImg
+  },
+  {
+    id: 10,
+    img: shaalestateImg
+  },
+  {
+    id: 11,
+    img: ektaGroupImg
+  },
+  {
+    id: 12,
+    img: nilayamDhamImg
+  },
+
 ]
